@@ -1,4 +1,4 @@
-package core_java_concepts_projects;
+package com.amdocs;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
