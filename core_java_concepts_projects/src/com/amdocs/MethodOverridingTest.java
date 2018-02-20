@@ -15,7 +15,7 @@ public class MethodOverridingTest extends Parent {
 	}
 	
 	@Override
-	protected long getNumbericValue() {
+	protected short getNumbericValue() {
 		System.out.println("Message from MethodOverridingTest class");
 		return 2L;
 	}
