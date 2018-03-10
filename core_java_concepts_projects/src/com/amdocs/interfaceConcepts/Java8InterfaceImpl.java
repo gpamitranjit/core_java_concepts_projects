@@ -6,6 +6,10 @@ public class Java8InterfaceImpl implements Java8Interface {
 		Java8Interface obj = new Java8InterfaceImpl();
 		obj.draw();
 		obj.message();
+		
+//		calling static method of java8 interface
+		int result = Java8Interface.cube(10);
+		System.out.println("result of calling java8 static method: " + result);
 	}
 
 	@Override

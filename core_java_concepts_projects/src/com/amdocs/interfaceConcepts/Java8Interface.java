@@ -10,7 +10,12 @@ package com.amdocs.interfaceConcepts;
 public interface Java8Interface {
 
 	void draw();
+	
 	default void message() {
 		System.out.println("default message from default method");
+	}
+	
+	static int cube(int a) {
+		return a*a*a;
 	}
 }
