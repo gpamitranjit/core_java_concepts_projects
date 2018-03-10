@@ -35,6 +35,10 @@ class B extends A {
 	}
 }
 
+/**
+ * @author Amit
+ *
+ */
 public class MethodOverridng {
 
 	public static void main(String[] args) {
