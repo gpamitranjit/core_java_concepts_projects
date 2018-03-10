@@ -36,6 +36,7 @@ public class DataMemberPolymorphism {
 		Bike bike = new Splender();
 		
 		System.out.println("speedLimit: "  + bike.getSpeedLimit());
+		System.out.println("speedLimit variable accessed directly: " + bike.speedLimit);
 		
 	}
 
