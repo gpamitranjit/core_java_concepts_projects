@@ -23,6 +23,7 @@ public class ThreadPool {
 				
 			}
 			
+//			after the execution of below line no new runnable task will taken for execution
 			executorService.shutdown();
 			
 			while(!executorService.isTerminated()) {}
