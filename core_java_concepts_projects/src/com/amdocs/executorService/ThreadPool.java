@@ -30,12 +30,14 @@ public class ThreadPool {
 //			if one of the above occurs the executorService will be terminated immediately!!
 			executorService.shutdown();			
 			try {
+				
 				if(!executorService.awaitTermination(11000, TimeUnit.MILLISECONDS)) {
-					executorService.shutdown();
+					executorService.shutdownNow();
 				}
+				
 			} catch (InterruptedException e) {
 				
-				executorService.shutdown();
+				executorService.shutdownNow();
 				System.out.println("InterruptedException: " + e.getMessage());
 				
 			}
