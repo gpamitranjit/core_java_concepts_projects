@@ -24,6 +24,7 @@ public class ThreadPool {
 			}
 			
 //			after the execution of below line no new runnable task will taken for execution
+//			with the below line the executorservice will not destroy immediately rather it will wait for the remaining tasks to complete their tasks
 			executorService.shutdown();
 			
 			while(!executorService.isTerminated()) {}
