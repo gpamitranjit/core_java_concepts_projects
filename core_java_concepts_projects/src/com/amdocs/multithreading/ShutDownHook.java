@@ -28,7 +28,7 @@ public class ShutDownHook {
 		runtimeObject.addShutdownHook(actualTheadObject);
 		
 		
-		System.out.println("press Ctrl + c to invoke shutdown hook");
+		
 		try {
 			
 			Thread.sleep(50);
