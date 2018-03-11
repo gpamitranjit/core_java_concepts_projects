@@ -10,6 +10,12 @@ package com.amdocs.nestedinterface;
  * 
  * An interface within another interface should have public access modifier!
  * 
+ * Why we use nested interfaces?
+ * 
+ * 	1. Nested interfaces help in grouping the logical interfaces in one place
+ * 	2. It increases the encapsulation
+ * 	3. Nested interfaces can lead to readable and maintainable code
+ * 
  * @author Amit
  *
  */
