@@ -21,7 +21,6 @@ class Message {
 class MyThread20 implements Runnable {
 
 	private String msg;
-	private Message messageObject;
 	
 	protected String getMsg() {
 		return msg;
@@ -31,14 +30,13 @@ class MyThread20 implements Runnable {
 		this.msg = msg;
 	}
 
-	MyThread20(String msg, Message messageObject) {
+	MyThread20(String msg) {
 		this.msg = msg;
-		this.messageObject = messageObject;
 	} 
 	
 	@Override
 	public void run() {
-		messageObject.print(msg);
+		Message.print(msg);
 	}
 	
 	
@@ -53,10 +51,9 @@ public class StaticSynchronization {
 
 	public static void main(String[] args) {
 		
-		Message msg = new Message();
 		
-		MyThread20 threadableObject1 = new MyThread20("Hello Amit", msg);
-		MyThread20 threadableObject2 = new MyThread20("Hello Ranjit", msg);
+		MyThread20 threadableObject1 = new MyThread20("Hello Amit");
+		MyThread20 threadableObject2 = new MyThread20("Hello Ranjit");
 		
 		
 //		use of either of above threadable object have no affect on the thread creation!
