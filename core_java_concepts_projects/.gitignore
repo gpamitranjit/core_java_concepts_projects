@@ -3,7 +3,7 @@
 
 #Eclipse files
 *.classpath
-*.project
+
 *.settings
 */bin/*
 
