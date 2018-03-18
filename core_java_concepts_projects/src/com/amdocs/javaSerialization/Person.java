@@ -11,11 +11,21 @@ import java.io.Serializable;
  */
 public class Person implements Serializable {
 
+	protected Person() {
+		super();
+	}
+
 	private String id;
 	private String name;
 
 	public String getId() {
 		return id;
+	}
+
+	protected Person(String id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
 	}
 
 	public void setId(String id) {

@@ -1,8 +1,10 @@
 package com.amdocs.javaSerialization;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 
@@ -26,6 +28,19 @@ public class MainApp {
 				objectOutputStream.writeObject(studentObject);
 				objectOutputStream.flush();
 				System.out.println("Student object has been written to the file!");
+				
+				System.out.println("=======================");
+				System.out.println("reading the state of the student object back into program.");
+				
+				FileInputStream fileInputStream = new FileInputStream("student.txt");
+				ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+				Student studentObject_2 = new Student();
+				try {
+					studentObject_2 = (Student) objectInputStream.readObject();
+					System.out.println("retrieved student object is: " + studentObject_2);
+				} catch (ClassNotFoundException e) {
+					System.out.println("ClassNotFoundException: " + e.getMessage());
+				}
 			} catch (IOException e) {
 				System.out.println("IOExcpetion: " + e.getMessage());
 			}
