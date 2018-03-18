@@ -1,5 +1,9 @@
 package com.amdocs.javaSerialization;
 
+/**
+ * @author Amit
+ *
+ */
 public class Student extends Person {
 
 	private String course;
