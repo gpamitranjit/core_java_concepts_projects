@@ -2,6 +2,9 @@ package com.amdocs.regex;
 
 import java.util.regex.Pattern;
 // A Quantifier defines how aften an element can occur!
+// ? after the quantifier makes it a reluctant quantifier..
+// the reluctant quantifier tries to find smallest match.
+// this makes the regular expression stop at the first match.
 public class RegEx {
 
 	public static void main(String[] args) {
