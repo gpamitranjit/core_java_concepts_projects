@@ -1,7 +1,7 @@
 package com.amdocs.regex;
 
 import java.util.regex.Pattern;
-
+// A Quantifier defines how aften an element can occur!
 public class RegEx {
 
 	public static void main(String[] args) {
