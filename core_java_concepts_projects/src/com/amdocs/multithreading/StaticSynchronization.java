@@ -30,15 +30,14 @@ class MyThread20 implements Runnable {
 		this.msg = msg;
 	}
 
-	MyThread20(String msg) {
+	public MyThread20(String msg) {
 		this.msg = msg;
 	} 
 	
 	@Override
 	public void run() {
-		Message.print(msg);
+		MyMessage.print(msg);
 	}
-	
 	
 }
 
