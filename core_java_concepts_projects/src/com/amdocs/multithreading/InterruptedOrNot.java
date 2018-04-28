@@ -8,11 +8,12 @@ public class InterruptedOrNot {
 		myThread53.start();
 		
 		myThread53.interrupt();
-//		if(myThread51.isInterrupted()) {
-//			System.out.println("(from main thread) Thread is interrupted!");
-//		}else {
-//			System.out.println("(from main thread) Thread is not interrupted!");
-//		}
+		
+		if(myThread53.isInterrupted()) {
+			System.out.println("(from main thread) Thread is interrupted!");
+		}else {
+			System.out.println("(from main thread) Thread is not interrupted!");
+		}
 		
 		System.out.println("end of main thread.");
 	}

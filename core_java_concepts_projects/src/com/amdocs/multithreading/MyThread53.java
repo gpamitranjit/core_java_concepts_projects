@@ -9,15 +9,9 @@ public class MyThread53 extends Thread {
 		}
 		
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(100);
 		} catch (InterruptedException e) {
 			System.out.println("InterruptedExeception: " + e.getMessage());
-		}
-		if(isInterrupted()) {
-			System.out.println("Thread is interrrupted!");
-		}
-		else {
-			System.out.println("Thread is not interrupted!");
 		}
 		
 	}
